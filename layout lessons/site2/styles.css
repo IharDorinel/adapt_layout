@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background-image: url(./!sources/bg1.jpg),
+    url(./!sources/bg2.jpg),
+    url(./!sources/bg3.jpg),
+    url(./!sources/main_bg.jpg);
+    background-size: 60pt,
+    60pt,
+    60pt,
+    cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 10pt 8pt, 10pt 80pt, 10pt 155pt, center;
+    counter-reset: ch1;
+}
+
+nav {
+    margin: 10px 10px 10px 80pt;
+    padding: 5px;
+    border: 4px solid grey;
+    font: 16pt Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    display: block;
+}
+
+nav a:link, nav a:visited {
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav a:active, nav a:hover {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    transform: scale(1.2, 1.2) translateY(4px);
+    transition-duration: 0.5s;
+}
+
+nav div {
+    color: white;
+    background-color: grey;
+}
+
+aside {
+    float: right;
+    margin: 20px 0 20px 20px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+h2 {
+    margin-left: 100px;
+}
+
+div#discography {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#discography > div {
+    width: 120px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    transform: rotate(5deg);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+}
+
+div#discography > div:hover {
+    transform: rotate(-10deg) translateY(-10px);
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+div.tb1 {
+    display: table;
+}
+
+div a {
+    display: block;
+    margin: 0 8px;
+}
+
+div a:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+div.tb1 > div {
+    display: table-row;
+}
+
+div.tb1 > div > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+a[target=gallery] {
+    font-size: 16pt;
+}
+
+table tr td p:before {
+    counter-increment: ch1;
+    content: counter(ch1) ". ";
+}
+
+header h1 {
+    font: bold 42pt Verdana, sans-serif;
+    text-align: right;
+    color: white;
+    background-image: radial-gradient(closest-side at 25pt 50%, black, white, black, white, black);
+    margin: 8pt 8pt 0 80pt;
+    padding-right: 12pt;
+    transform: skewX(5deg);
+}
+
+main {
+    margin-left: 80pt;
+    padding-left: 20pt;
+    padding-right: 10pt;
+    border-left-width: 20pt;
+    border-left-style: solid;
+    border-left-color: grey;
+    column-width: auto;
+}
+
+main p {
+    font: 12pt Arial, sans-serif;
+}
+
+footer {
+    font-style: italic;
+    width: 88%;
+    background-color: grey;
+    color: white;
+    text-align: right;
+    margin-left: 155px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background: transparent;
+    }
+
+    header h1, nav, main, footer {
+        margin-left: 8pt;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a:active, nav a:hover {
+        transform: translateY(4px);
+    }
+
+    main {
+        padding-left: 0;
+        border-left-width: 0;
+    }
+
+    div#discography > div {
+        border: 1px solid black;
+    }
+
+    iframe {
+        max-width: 100vw;
+    }
+
+    div.tb1 > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.tb1 > div > *:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+@media print {
+    body {
+        background: transparent;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header h1, main, footer {
+        margin-left: 8pt;
+    }
+
+    header, footer {
+        background: transparent;
+    }
+
+    header h1 {
+        letter-spacing: 10pt;
+    }
+
+    main {
+        padding-left: 0;
+        border-left-width: 0;
+    }
+
+    header h1, footer p {
+        color: black;
+    }
+
+    footer {
+        border-top: 1px solid black;
+    }
+}

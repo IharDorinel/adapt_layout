@@ -1,0 +1,155 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header, nav, main, footer {
+    position: fixed;
+}
+
+p {
+    font-size: 14pt;
+}
+
+header {
+    background-color: white;
+    height: 83pt;
+    margin-bottom: 20pt;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.pos1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140pt;
+}
+
+.pos1 img {
+    height: 75pt;
+}
+
+.pos2 {
+    position: absolute;
+    top: 29pt;
+    left: 140pt;
+    right: 0;
+}
+
+.pos2 h1 {
+    font: bold italic 42pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 10pt;
+    margin: 0;
+    background-color: darksalmon;
+}
+
+.pos3 {
+    position: absolute;
+    top: 4pt;
+    left: 140pt;
+    right: 70pt;
+}
+
+.pos3 h1 {
+    font: bold 24pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 6pt;
+    margin: 0;
+    color: darksalmon;
+}
+
+nav {
+    width: 200px;
+    padding: 10px;
+    background-color: bisque;
+    left: 0;
+    top: 100pt;
+    bottom: 120pt;
+}
+
+nav div, nav a {
+    font-size: 20pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+nav a:link, nav a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+nav a:active, nav a:hover {
+    color: darksalmon;
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+main {
+    background-image: linear-gradient(to right top, salmon 0%, white 67%, salmon 100%);
+    text-align: justify;
+    left: 230px;
+    top: 100pt;
+    right: 0;
+    bottom: 120pt;
+    padding-left: 20px;
+    overflow: auto;
+}
+
+div {
+    font-size: 12pt;
+    margin: 5px 0;
+}
+
+.bigger {
+    font-size: 16pt;
+}
+
+.advertising {
+    margin-left: 30pt;
+}
+
+footer {
+    width: 100%;
+    min-width: 300px;
+    border-top: 2pt dashed lightgrey;
+    background-color: white;
+    height: 170pt;
+    text-align: right;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.pos4 {
+    position: absolute;
+    top: 0;
+    right: 20pt;
+}
+
+.pos5 {
+    position: absolute;
+    top: 20pt;
+    left: 150pt;
+    height: 80pt;
+    width: 130pt;
+    background-color: yellow;
+    font: bold 16pt Verdana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p.greeting {
+    font-size: 24pt;
+}
+

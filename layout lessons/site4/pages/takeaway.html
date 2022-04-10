@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>Заказ еды на вынос</title>
+</head>
+<body>
+<header>
+  <div class="pos1"><img src="../images/html/sushi.jpg"/></div>
+  <div class="pos2"><h1>Йокогама</h1></div>
+  <div class="pos3"><h1>Суши-бар</h1></div>
+</header>
+<main>
+  <form action="mailto:order@yokogama.ru" method="post" enctype="text/plain">
+   <p><label for="dishes">Что желаете заказать?</label><br>
+     <select name="dishes" id="dishes" size="6" multiple>
+       <optgroup label="Сашими">
+       <option value="unagi">Унаги</option>
+       <option value="hamachi">Хамачи</option>
+       </optgroup>
+       <optgroup label="Суши">
+       <option value="chukka">Чукка</option>
+       <option value="maguro">Магуро</option>
+       <option value="tobiko">Тобико</option>
+       </optgroup>
+       <optgroup label="Роллы">
+       <option value="kunsei">Кунсэй</option>
+       <option value="arigato">Аригато</option>
+       <option value="mexico">Мексиканский</option>
+       </optgroup>
+     </select></p>
+    <p><label for="phone">По какому телефону Вам перезвонить?</label><br>
+      <input type="text" name="phone" id="phone" value="+3752512345678" required></p>
+    <p><input type="submit"></p>
+  </form>
+</main>
+<footer>
+  <div class="pos4">
+    <p class="greeting">Ждем вас!</p>
+    <address>Наш адрес:<br>ул. Зеленая, 17.</address>
+    <p>&copy;читатели книги &laquo;HTML и CSS&raquo;.<br>Все права защищены.</p>
+  </div>
+</footer>
+</body>
+</html>

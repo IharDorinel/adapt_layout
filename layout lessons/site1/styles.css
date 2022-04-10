@@ -1,0 +1,171 @@
+@keyframes navlinks {
+    60% {color: black;}
+    100% {
+        color: darksalmon;
+        transform: translateX(10px);
+    }
+}
+
+@keyframes orderlink {
+   0% {
+        left: -50pt;
+        height: calc(80pt / 5);
+        width: calc(130pt / 5);
+        background-color: white;
+        font: bold 3pt Verdana;
+    }
+    60% {
+        height: 80pt;
+        width: 130pt;
+        font: bold 16pt Verdana;
+    }
+}
+
+body {
+    font-family: Arial;
+    background-image: linear-gradient(to right top, salmon 0%, white 67%, salmon 100%);
+    margin: 0;
+}
+
+p {
+    font-size: 14pt;
+}
+
+header {
+    background-color: white;
+    height: 83pt;
+    margin-bottom: 20pt;
+}
+
+.pos1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140pt;
+}
+
+.pos1 img {
+    height: 75pt;
+}
+
+.pos2 {
+    position: absolute;
+    top: 29pt;
+    left: 140pt;
+    right: 0;
+}
+
+.pos2 h1 {
+    font: bold italic 42pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 10pt;
+    margin: 0;
+    background-color: darksalmon;
+}
+
+.pos3 {
+    position: absolute;
+    top: 4pt;
+    left: 140pt;
+    right: 70pt;
+}
+
+.pos3 h1 {
+    font: bold 24pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 6pt;
+    margin: 0;
+    color: darksalmon;
+}
+
+nav {
+    float: left;
+    width: 150px;
+    margin: 10px 40px 20px 0;
+    padding: 10px;
+    border: black medium double;
+    border-radius: 10px;
+}
+
+nav div, nav a {
+    font-size: 20pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+nav a:link, nav a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+nav a:active, nav a:hover {
+    text-decoration: none;
+    animation-name: navlinks;
+    animation-duration: 0.5s;
+    transform: translateX(10px);
+    animation-fill-mode: forwards;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+main {
+    margin-left: 210px;
+    text-align: justify;
+}
+
+div {
+    font-size: 12pt;
+    margin: 5px 0;
+}
+
+.bigger {
+    font-size: 16pt;
+}
+
+.advertising {
+    margin-left: 30pt;
+}
+
+footer {
+    width: 100%;
+    min-width: 300px;
+    border-top: 2pt dashed lightgrey;
+    background-color: white;
+    height: 170pt;
+    text-align: right;
+    position: relative;
+}
+
+.pos4 {
+    position: absolute;
+    top: 0;
+    right: 20pt;
+}
+
+.pos5 {
+    position: absolute;
+    top: 20pt;
+    left: 150pt;
+    height: 80pt;
+    width: 130pt;
+    background-color: yellow;
+    font: bold 16pt Verdana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation-name: orderlink;
+    animation-delay: 2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+p.greeting {
+    font-size: 24pt;
+}
+
